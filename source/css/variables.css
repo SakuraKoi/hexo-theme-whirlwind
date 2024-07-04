@@ -1,0 +1,17 @@
+:root {
+    --text-primary-color: #00000099;
+    --text-secondary-color: #bbbbbb;
+
+    --bg-primary-color: #FFFFFFAA;
+    --bg-secondary-color: #EEEEEEAA;
+
+    --bg-border-primary-color: #5a5a5a;
+    --bg-border-secondary-color: #f2f2f2;
+
+    --link-color: #5a5a5a;
+    --link-hover-color: #4786d6;
+
+
+    --sidebar-author-color: #424242;
+    --sidebar-desc-color: #565654;
+}

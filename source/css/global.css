@@ -1,5 +1,5 @@
 body {
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--text-primary-color);
     font-family: "LXGW WenKai Screen", "PingHei", "PingFang SC", Helvetica Neue, "Work Sans", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
     font-size: 15px;
     width: 100%;
@@ -20,9 +20,9 @@ a:link, a:visited, .clickable {
 }
 
 .clickable, a {
-    color: #5a5a5a;
+    color: var(--link-color);
 }
 
 .clickable:hover, a:hover {
-    color: #4786d6;
+    color: var(--link-hover-color);
 }
