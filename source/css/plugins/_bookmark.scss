@@ -1,0 +1,26 @@
+.bookmark {
+  max-height: 30%;
+  margin: 3em 2em;
+  border-bottom: 1px solid var(--border-color-darker-1);
+  border-top: 1px solid var(--border-color-darker-1);
+
+  .bookmark-title {
+    height: 25px;
+  }
+
+  .bookmark-list {
+    height: calc(100% - 25px);
+    overflow: scroll;
+  }
+}
+
+.toc {
+  margin: 0;
+  padding: 0;
+  > .toc-item {
+    margin-left: 2em;
+  }
+  .toc-item {
+    text-align: start;
+  }
+}

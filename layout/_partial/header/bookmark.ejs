@@ -1,1 +1,12 @@
-<% <!-- TODO add bookmark --> %>
+<% /* if (!page.disableBookmark) { %>
+    <div class="bookmark">
+        <div class="bookmark-title">目录</div>
+        <div class="bookmark-list" <% if (page.encrypt) { %>style="display:none"<% } %>>
+            <% if (page.encrypt) { %>
+                <%- toc(page.origin, {list_number: false, max_depth: 2}) %>
+            <% } else { %>
+                <%- toc(page.content, {list_number: false, max_depth: 2}) %>
+            <% } %>
+        </div>
+    </div>
+<% } */%>
