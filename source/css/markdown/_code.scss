@@ -42,7 +42,7 @@ figure.highlight {
 }
 
 pre.language-html:before,
-pre.language-js:before,
+pre.language-javascript:before,
 pre.language-bash:before,
 pre.language-css:before,
 pre.language-scss:before,
@@ -72,7 +72,7 @@ pre.language-html:before {
   content: "HTML"
 }
 
-pre.language-js:before {
+pre.language-javascript:before {
   content: "JS"
 }
 
