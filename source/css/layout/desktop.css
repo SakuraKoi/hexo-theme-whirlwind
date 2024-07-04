@@ -14,7 +14,7 @@
 
 .navigation > .navigation-menu {
     list-style: none;
-    padding: 0 30px;
+    padding: 0 2em;
     float: left;
     font-size: 15px;
 }
@@ -128,11 +128,11 @@
 }
 
 .post-list {
-    padding: 1.5em;
+    padding: 1em 2em 2em 2em;
 }
 
 .post-list > .post-item {
-    padding: 1em;
+    padding: 1em 0;
 }
 
 .post-item .post-title {
@@ -188,4 +188,34 @@
 .paginator > .page-number.current {
     background: var(--bg-border-primary-color);
     color: white;
+}
+
+.post-list > .list-title {
+    font-size: 24px;
+    color: #666666;
+    font-weight: 600;
+    line-height: 2.2em;
+}
+
+.post-list > .list {
+    padding: 0;
+    margin: 0;
+}
+
+.post-list > .list > .list-item {
+    display: flex;
+    padding-bottom: 5px;
+    justify-content: space-between;
+}
+
+.list-item > a {
+    color: #8f8f8f;
+}
+
+.list-item > a:hover {
+    color: var(--link-hover-color);
+}
+
+.list-item .post-time {
+    color: #c5c5c5;
 }

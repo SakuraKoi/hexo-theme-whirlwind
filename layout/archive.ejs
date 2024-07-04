@@ -1,0 +1,31 @@
+<div class="post-list">
+    <%
+    let posts = page.posts.reduce((collection, post) => {
+        let year = date(post.date, "YYYY");
+        if (!collection[year])
+            collection[year] = []
+
+        collection[year].push(post);
+        return collection;
+    }, {})
+
+    Object.keys(posts).forEach(year => {
+    %>
+        <div class="list-title"><%= year %></div>
+        <ul class="list">
+            <% posts[year].forEach(post => { %>
+                <div class="list-item">
+                    <a href="<%- url_for(post.path) %>"
+                       title="<%= post.title %>">
+                        <%= post.title %>
+                    </a>
+                    <div class="post-time">
+                        <span class="date"><%= date(post.date, "MM.DD") %></span>
+                    </div>
+                </div>
+            <% }); %>
+        </ul>
+    <% }) %>
+</div>
+
+<%- partial('_partial/paginator') %>
