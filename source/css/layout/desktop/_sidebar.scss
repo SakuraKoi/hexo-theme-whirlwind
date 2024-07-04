@@ -38,6 +38,7 @@
     .description {
       font-size: 14px;
       color: var(--sidebar-desc-color);
+      line-height: 1em;
     }
 
     .social-links {
@@ -49,7 +50,7 @@
 
       li {
         display: inline;
-        padding: 0 4px;
+        padding: 0 6px;
         line-height: 0;
       }
     }
