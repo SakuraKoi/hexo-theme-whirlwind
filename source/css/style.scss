@@ -4,7 +4,8 @@
 @import "layout/layout";
 
 .post-content {
-    @import "document";
+    @import "markdown/document";
+    @import "plugins/blur";
 }
 
-@import "gitalk-override";
+@import "plugins/gitalk";
