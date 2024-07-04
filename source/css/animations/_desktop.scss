@@ -1,0 +1,28 @@
+.navigation-menu {
+  animation: slideTopIn 1s;
+}
+
+.sidebar {
+  animation: slideLeftIn 1s;
+}
+
+.footer {
+  animation: slideLeftIn 1s;
+}
+
+.post-list > * {
+  animation: slideTopIn 0.5s;
+  opacity: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@for $i from 1 through 50 {
+  .post-list > *:nth-child(#{$i}) {
+    animation-delay: calc(0.2s * #{$i});
+  }
+}
+
+.post {
+  animation: slideTopIn 1s;
+}

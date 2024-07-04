@@ -1,5 +1,8 @@
 @import "desktop";
+@import "../animations/base";
+@import "../animations/desktop";
 
 @media screen and (max-width: 960px) {
   @import "mobile";
+  @import "../animations/mobile";
 }

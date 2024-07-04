@@ -12,19 +12,17 @@
     Object.keys(posts).forEach(year => {
     %>
         <div class="list-title"><%= year %></div>
-        <ul class="list">
-            <% posts[year].forEach(post => { %>
-                <div class="list-item">
-                    <a href="<%- url_for(post.path) %>"
-                       title="<%= post.title %>">
-                        <%= post.title %>
-                    </a>
-                    <div class="post-time">
-                        <span class="date"><%= date(post.date, "MM.DD") %></span>
-                    </div>
+        <% posts[year].forEach(post => { %>
+            <div class="list-item">
+                <a href="<%- url_for(post.path) %>"
+                   title="<%= post.title %>">
+                    <%= post.title %>
+                </a>
+                <div class="post-time">
+                    <span class="date"><%= date(post.date, "MM.DD") %></span>
                 </div>
-            <% }); %>
-        </ul>
+            </div>
+        <% }); %>
     <% }) %>
 </div>
 

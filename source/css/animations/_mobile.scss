@@ -1,0 +1,15 @@
+.sidebar {
+  animation: slideTopIn 1s;
+}
+
+.navigation-menu {
+  animation: slideTopIn 1s;
+}
+
+.footer {
+  animation: fadeIn 1s;
+  opacity: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
