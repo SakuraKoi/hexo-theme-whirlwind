@@ -3,9 +3,9 @@
         <% for (name in theme.menu) { %>
             <li>
                 <% if (is_current(theme.menu[name].link)) { %>
-                    <a class="current" href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].title %></a>
+                    <a class="current" href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].text %></a>
                 <% } else { %>
-                    <a href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].title %></a>
+                    <a href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].text %></a>
                 <% } %>
             </li>
         <% } %>

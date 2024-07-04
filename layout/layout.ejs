@@ -18,7 +18,7 @@
         } else {
             for (name in theme.menu) {
                 if (is_current(theme.menu[name].link)) {
-                    if (theme.menu[name].showOnTitle) {
+                    if (!!theme.menu[name].title) {
         %>
                         <%= theme.menu[name].title %> ·
         <%
