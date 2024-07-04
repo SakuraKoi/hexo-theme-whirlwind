@@ -4,8 +4,12 @@
             <h3 class="post-title"><a href="<%- url_for(post.path) %>"><%= post.title %></a></h3>
             <div class="post-summary">
                 <p>
-                    <%- strip_html(post.content).substr(0, 240) %>
-                    <a class="read-more" href="<%- url_for(post.path) %>"> ... </a>
+                    <% if (post.summary) { %>
+                    <%- post.summary %>
+                    <% } else { %>
+                        <%- strip_html(post.content).split('\n')[0].substring(0, 240); %>
+                    <% } %>
+                    <a class="read-more" href="<%- url_for(post.path) %>"> ...</a>
                 </p>
             </div>
             <div class="post-meta">
