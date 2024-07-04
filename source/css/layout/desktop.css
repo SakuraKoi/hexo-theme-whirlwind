@@ -1,0 +1,43 @@
+.navigation {
+    width: 70%;
+    position: fixed;
+    right: 0;
+    z-index: 3;
+    background-color: #fff;
+    height: 60px;
+    border-bottom: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation .navigation-menu {
+    list-style: none;
+    padding: 0 30px;
+    float: left;
+    font-size: 15px;
+}
+
+.navigation .navigation-menu li {
+    position: relative;
+    display: initial;
+    padding-right: 20px;
+}
+
+.navigation * a, .clickable {
+    color: #5a5a5a;
+}
+
+.navigation * a:hover, .clickable:hover {
+    color: #4786d6;
+}
+
+.navigation .navigation-menu a.current {
+    color: #5a5a5a;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #5a5a5a;
+}
+
+.navigation .navigation-utility {
+    padding: 0 30px;
+}
