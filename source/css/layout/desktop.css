@@ -4,9 +4,9 @@
     right: 0;
     top: 0;
     z-index: 3;
-    background-color: white;
+    background-color: var(--navigation-bg-color);
     height: 60px;
-    border-bottom: 1px solid var(--bg-border-secondary-color);
+    border-bottom: 1px solid var(--border-color-lighter);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,11 +28,15 @@
 .navigation > .navigation-menu a.current {
     font-weight: bold;
     padding-bottom: 19px;
-    border-bottom: 1px solid var(--bg-border-primary-color);
+    border-bottom: 1px solid var(--border-color-normal);
 }
 
 .navigation > .navigation-utility {
     padding: 0 30px;
+}
+
+.navigation-utility .nav-button {
+    padding: 0.35em;
 }
 
 .sidebar {
@@ -42,13 +46,13 @@
     width: 30%;
     -webkit-background-size: cover;
     background-size: cover;
-    background-color: var(--bg-secondary-color);
+    background-color: var(--bg-color-darker);
     height: 100%;
     top: 0;
     left: 0;
     position: fixed;
     z-index: 4;
-    border-right: 1px solid var(--bg-border-secondary-color);
+    border-right: 1px solid var(--border-color-lighter);
     text-align: center;
 }
 
@@ -124,7 +128,7 @@
     margin-left: 30%;
     width: 70%;
     margin-top: 60px;
-    background-color: var(--bg-primary-color)
+    background-color: var(--bg-color-normal)
 }
 
 .post-list {
@@ -144,6 +148,11 @@
     margin: 0;
 }
 
+.post-item .post-title a:hover {
+    color: var(--text-color-darker);
+    text-decoration: underline;
+}
+
 .post-item .post-summary {
     word-wrap: break-word;
     word-break: break-all;
@@ -151,7 +160,7 @@
 
 .post-item .post-meta {
     max-width: 100%;
-    color: var(--text-secondary-color);
+    color: var(--text-color-lighter);
     font-size: 13px;
     display: flex;
     column-gap: 1em;
@@ -159,7 +168,7 @@
 
 .post-meta > .tags a {
     text-decoration: none;
-    color: var(--text-secondary-color);
+    color: var(--text-color-lighter);
     padding-right: .25em;
 }
 
@@ -178,21 +187,21 @@
 .paginator > .page-number, .extend {
     padding: .15em .5em;
     text-align: center;
-    background: #f5f5f5;
+    background: var(--pagination-bg-color);
 }
 
 .paginator > .page-number:hover, .extend:hover {
-    background: #F7FAFCFF;
+    background: var(--pagination-hover-color);
 }
 
 .paginator > .page-number.current {
-    background: var(--bg-border-primary-color);
-    color: white;
+    background: var(--border-color-normal);
+    color: var(--bg-color-contrast);
 }
 
 .post-list > .list-title {
     font-size: 24px;
-    color: #666666;
+    color: var(--text-color-darker);
     font-weight: 600;
     line-height: 2.2em;
 }
@@ -209,7 +218,7 @@
 }
 
 .list-item > a {
-    color: #8f8f8f;
+    color: var(--text-color-normal);
 }
 
 .list-item > a:hover {
@@ -217,5 +226,5 @@
 }
 
 .list-item .post-time {
-    color: #c5c5c5;
+    color: var(--text-color-lighter);
 }
