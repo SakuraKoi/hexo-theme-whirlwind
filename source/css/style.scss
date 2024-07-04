@@ -6,6 +6,7 @@
 .post-content {
     @import "markdown/document";
     @import "plugins/blur";
+    @import "plugins/links";
 }
 
 @import "plugins/gitalk";
