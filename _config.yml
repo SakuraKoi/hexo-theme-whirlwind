@@ -21,8 +21,16 @@ menu:
     link: '/about'
 
 contacts:
-  - icon: github
+  - icon: 'fa-brands fa-github'
     url: https://github.com/SakuraKoi
+  - icon: 'fa-brands fa-twitter'
+    url: https://dummy.com/
+  - icon: 'fa-brands fa-youtube'
+    url: https://dummy.com/
+  - icon: 'fa-brands fa-telegram'
+    url: https://dummy.com/
+  - icon: 'fa-brands fa-google'
+    url: https://dummy.com/
 
 
 gitalk:

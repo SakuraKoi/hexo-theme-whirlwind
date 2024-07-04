@@ -24,14 +24,6 @@
     padding-right: 20px;
 }
 
-.navigation * a, .clickable {
-    color: #5a5a5a;
-}
-
-.navigation * a:hover, .clickable:hover {
-    color: #4786d6;
-}
-
 .navigation .navigation-menu a.current {
     color: #5a5a5a;
     padding-bottom: 22px;
@@ -40,4 +32,59 @@
 
 .navigation .navigation-utility {
     padding: 0 30px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: rgba(238, 238, 238, 0.6666666667);
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 4;
+    border-right: 1px solid #f2f2f2;
+    text-align: center;
+}
+
+.sidebar .author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .author-info h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0;
+}
+
+
+.sidebar .author-info h3 a:hover {
+    color: #424242;
+}
+
+.sidebar .author-info .description {
+    font-size: 14px;
+    color: #565654;
+}
+
+.sidebar .author-info .social-links li {
+    display: inline;
+    padding: 0 4px;
+    line-height: 0;
+}
+
+.sidebar .author-info .social-links {
+    list-style: none;
+    padding: 0;
+    font-size: 17px;
+    text-align: center;
+    margin: 0.75em 0;
 }
