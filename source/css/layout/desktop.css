@@ -2,6 +2,7 @@
     width: 70%;
     position: fixed;
     right: 0;
+    top: 0;
     z-index: 3;
     background-color: #fff;
     height: 60px;
@@ -11,26 +12,26 @@
     justify-content: space-between;
 }
 
-.navigation .navigation-menu {
+.navigation > .navigation-menu {
     list-style: none;
     padding: 0 30px;
     float: left;
     font-size: 15px;
 }
 
-.navigation .navigation-menu li {
+.navigation > .navigation-menu li {
     position: relative;
     display: initial;
     padding-right: 20px;
 }
 
-.navigation .navigation-menu a.current {
+.navigation > .navigation-menu a.current {
     color: #5a5a5a;
     padding-bottom: 22px;
     border-bottom: 1px solid #5a5a5a;
 }
 
-.navigation .navigation-utility {
+.navigation > .navigation-utility {
     padding: 0 30px;
 }
 
@@ -51,13 +52,13 @@
     text-align: center;
 }
 
-.sidebar .author-info {
+.sidebar > .author-info {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sidebar .author-info h3 {
+.sidebar > .author-info h3 {
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 2px;
@@ -66,22 +67,22 @@
 }
 
 
-.sidebar .author-info h3 a:hover {
+.sidebar > .author-info h3 a:hover {
     color: #424242;
 }
 
-.sidebar .author-info .description {
+.sidebar > .author-info .description {
     font-size: 14px;
     color: #565654;
 }
 
-.sidebar .author-info .social-links li {
+.sidebar > .author-info .social-links li {
     display: inline;
     padding: 0 4px;
     line-height: 0;
 }
 
-.sidebar .author-info .social-links {
+.sidebar > .author-info .social-links {
     list-style: none;
     padding: 0;
     font-size: 17px;
@@ -95,7 +96,7 @@
     font-size: 12.5px;
     margin: 0 auto;
     bottom: 0;
-    position: absolute;
+    position: fixed;
     width: 30%;
     padding-bottom: 20px;
     z-index: 5;
@@ -109,8 +110,52 @@
     color: #4786d6;
 }
 
-.footer .moe-icp img {
+.footer > .moe-icp img {
     height: 17px;
     position: relative;
     top: 4px;
+}
+
+.main {
+    height: auto;
+    margin-left: 30%;
+    width: 70%;
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.6666666667);
+}
+
+.post-list {
+    padding: 30px;
+}
+
+.post-list > .post-item {
+    padding: 1em;
+}
+
+.post-item .post-title {
+    letter-spacing: 1px;
+    line-height: 1;
+    font-weight: 600;
+    color: #464646;
+    font-size: 22px;
+    margin: 0;
+}
+
+.post-item .post-summary {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.post-item .post-meta {
+    max-width: 100%;
+    color: #bbbbbb;
+    font-size: 13px;
+    display: flex;
+    column-gap: 1em;
+}
+
+.post-meta > .tags a {
+    text-decoration: none;
+    color: #bbbbbb;
+    padding-right: .25em;
 }
