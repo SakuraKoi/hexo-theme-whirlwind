@@ -14,7 +14,20 @@
     <title>
         <% if (page.title) { %>
             <%= page.title %> ·
-        <% } %>
+        <%
+        } else {
+            for (name in theme.menu) {
+                if (is_current(theme.menu[name].link)) {
+                    if (theme.menu[name].showOnTitle) {
+        %>
+                        <%= theme.menu[name].title %> ·
+        <%
+                    }
+                    break;
+                }
+            }
+        }
+        %>
 
         <%= theme.title || config.title %>
     </title>

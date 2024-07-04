@@ -11,14 +11,19 @@ moeICP: '114514'
 menu:
   - title: 首页
     link: '/'
+    showOnTitle: false
   - title: 归档
     link: '/archives'
+    showOnTitle: true
   - title: 留言
     link: '/guestbook'
+    showOnTitle: true
   - title: 友链
     link: '/links'
+    showOnTitle: true
   - title: 关于
     link: '/about'
+    showOnTitle: true
 
 contacts:
   - icon: 'fa-brands fa-github'
