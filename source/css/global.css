@@ -3,8 +3,10 @@ body {
     font-family: "LXGW WenKai Screen", "PingHei", "PingFang SC", Helvetica Neue, "Work Sans", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
     font-size: 15px;
     width: 100%;
-    margin: 0 auto 30px auto;
     background-color: #fff;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6em;
 }
 
 a {

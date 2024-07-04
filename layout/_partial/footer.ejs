@@ -1,3 +1,14 @@
 <div class="footer">
-dummy footer
+    <div>
+        <span>© <%= theme.copyright %>&nbsp;</span><i class="fa fa-star"></i>&nbsp;<span><%= theme.author %></span>
+    </div>
+    <div>
+    <span>
+        Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a> &amp;
+        Theme <a href="https://github.com/SakuraKoi/hexo-theme-whirlwind" target="_blank">Whirlwind </a>
+    </div>
+    <div class="moe-icp">
+        <img src="<%- url_for("/images/moeicp.webp") %>">
+        <a href="https://icp.gov.moe/?keyword=<%= theme.moeICP %>" target="_blank">萌ICP备<%= theme.moeICP %>号</a>
+    </div>
 </div>

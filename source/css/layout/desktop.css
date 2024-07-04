@@ -88,3 +88,29 @@
     text-align: center;
     margin: 0.75em 0;
 }
+
+.footer {
+    clear: both;
+    text-align: center;
+    font-size: 12.5px;
+    margin: 0 auto;
+    bottom: 0;
+    position: absolute;
+    width: 30%;
+    padding-bottom: 20px;
+    z-index: 5;
+}
+
+.footer a, .footer a:link {
+    color: #a6a6a6;
+}
+
+.footer a:hover {
+    color: #4786d6;
+}
+
+.footer .moe-icp img {
+    height: 17px;
+    position: relative;
+    top: 4px;
+}
