@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="renderer" content="webkit">
+
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+
+    <link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+
+    <title>
+        <% if (page.title) { %>
+            <%= page.title %> 丨
+        <% } %>
+
+        <%= theme.title || config.title %>
+    </title>
+
+    <meta name="description"
+          content="<% page.description || theme.description || config.description || "A blog powered by Hexo" %>">
+
+    <% if (theme.favicon){ %>
+        <%- favicon_tag(theme.favicon) %>
+    <% } %>
+
+    <% if (!!page.keywords || !!theme.keywords) { %>
+        <meta name="keywords" content="<% page.keywords || theme.keywords %>">
+    <% } %>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.6.0/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.5/400.min.css">
+
+    <%- css('css/style.css') %>
+</head>
+<body>
+<%- partial('_partial/header') %>
+<main class="main">
+    <%- body %>
+</main>
+<%- partial('_partial/footer') %>
+</body>
+</html>

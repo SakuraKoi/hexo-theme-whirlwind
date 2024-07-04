@@ -1,0 +1,21 @@
+title: Whirlwind-Theme
+keywords: SakuraKooi
+favicon: /images/favicon.ico
+logo: /images/logo.webp
+
+author: SakuraKooi
+description: "It's a minimal but stylish hexo theme!"
+copyright: '2024'
+moeICP: '萌ICP备114514号'
+
+contacts:
+  - icon: github
+    url: https://github.com/SakuraKoi
+
+gitalk:
+  enable: false
+  clientId: '114514'
+  clientSecret: '114514'
+  repo: '114514'
+  owner: '114514'
+  admin: '114514'
