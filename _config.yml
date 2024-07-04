@@ -44,3 +44,6 @@ gitalk:
   repo: '114514'
   owner: '114514'
   admin: '114514'
+
+node_sass:
+  outputStyle: expanded

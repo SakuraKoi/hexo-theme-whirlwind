@@ -1,0 +1,16 @@
+@import "desktop/navigation";
+@import "desktop/sidebar";
+@import "desktop/footer";
+@import "desktop/paginator";
+
+.main {
+  height: auto;
+  margin-left: 30%;
+  margin-top: 60px;
+  background-color: var(--bg-color-normal);
+  padding: 1em 2em 2em 2em;
+}
+
+@import "desktop/post";
+@import "desktop/post-index";
+@import "desktop/post-archive";

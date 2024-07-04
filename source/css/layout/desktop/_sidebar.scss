@@ -1,0 +1,57 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: var(--bg-color-darker);
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 4;
+  border-right: 1px solid var(--border-color-lighter);
+  text-align: center;
+
+  .author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      line-height: 1;
+      margin: 0;
+
+      a {
+        color: var(--sidebar-author-color);
+      }
+
+      a:hover {
+        color: var(--sidebar-author-color);
+      }
+    }
+
+    .description {
+      font-size: 14px;
+      color: var(--sidebar-desc-color);
+    }
+
+    .social-links {
+      list-style: none;
+      padding: 0;
+      font-size: 17px;
+      text-align: center;
+      margin: 0.75em 0;
+
+      li {
+        display: inline;
+        padding: 0 4px;
+        line-height: 0;
+      }
+    }
+  }
+}

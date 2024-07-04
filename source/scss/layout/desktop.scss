@@ -158,7 +158,7 @@
     word-break: break-all;
 }
 
-.post-item .post-meta {
+.post-item > .post-meta {
     max-width: 100%;
     color: var(--text-color-lighter);
     font-size: 13px;
@@ -166,13 +166,13 @@
     column-gap: 1em;
 }
 
-.post-meta > .tags a {
+.post-item > .post-meta > .tags a {
     text-decoration: none;
     color: var(--text-color-lighter);
     padding-right: .25em;
 }
 
-.post-meta > .tags a:hover {
+.post-item  > .post-meta > .tags a:hover {
     color: var(--link-hover-color);
 }
 
@@ -227,4 +227,8 @@
 
 .list-item .post-time {
     color: var(--text-color-lighter);
+}
+
+.post > .post-title {
+
 }

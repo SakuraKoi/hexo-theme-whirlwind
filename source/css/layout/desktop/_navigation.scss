@@ -1,0 +1,42 @@
+.navigation {
+  width: 70%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  background-color: var(--navigation-bg-color);
+  height: 60px;
+  border-bottom: 1px solid var(--border-color-lighter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navigation-menu {
+    list-style: none;
+    padding: 0 2em;
+    float: left;
+    font-size: 15px;
+
+    li {
+      position: relative;
+      display: initial;
+      padding-right: 20px;
+      text-wrap: nowrap;
+    }
+
+    a.current {
+      font-weight: bold;
+      padding-bottom: 19px;
+      border-bottom: 1px solid var(--border-color-normal);
+    }
+  }
+
+  .navigation-utility {
+    padding: 0 30px;
+
+    .nav-button {
+      padding: 0.35em;
+    }
+
+  }
+}

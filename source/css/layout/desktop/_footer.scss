@@ -1,0 +1,25 @@
+.footer {
+  clear: both;
+  text-align: center;
+  font-size: 12.5px;
+  margin: 0 auto;
+  bottom: 0;
+  position: fixed;
+  width: 30%;
+  padding-bottom: 20px;
+  z-index: 5;
+
+  a, a:link {
+    color: var(--link-color);
+  }
+
+  a:hover {
+    color: var(--link-hover-color);
+  }
+
+  .moe-icp img {
+    height: 17px;
+    position: relative;
+    top: 4px;
+  }
+}

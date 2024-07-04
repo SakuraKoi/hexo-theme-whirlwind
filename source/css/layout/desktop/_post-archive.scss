@@ -1,0 +1,31 @@
+.post-list {
+  .list-title {
+    font-size: 24px;
+    color: var(--text-color-darker);
+    font-weight: 600;
+    line-height: 2.2em;
+  }
+
+  .list {
+    padding: 0;
+    margin: 0;
+
+    .list-item {
+      display: flex;
+      padding-bottom: 5px;
+      justify-content: space-between;
+
+      a {
+        color: var(--text-color-normal);
+      }
+
+      a:hover {
+        color: var(--link-hover-color);
+      }
+
+      .post-time {
+        color: var(--text-color-lighter);
+      }
+    }
+  }
+}

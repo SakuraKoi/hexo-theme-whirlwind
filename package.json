@@ -8,5 +8,8 @@
     "theme",
     "whirlwind"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "hexo-renderer-sass": "^0.5.0"
+  }
 }
