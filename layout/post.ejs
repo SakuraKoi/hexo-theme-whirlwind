@@ -1,59 +1,61 @@
 <div class="post">
-    <% if (is_post() && (!page.hideInfo)) { %>
-        <div class="post-info">
-            <div class="post-title"><h3><a><%= page.title %></a></h3></div>
-        </div>
-    <% } %>
-
-    <div class="post-content">
-        <%- page.content %>
-    </div>
-
-    <% if (is_post() && (!page.hideInfo)) { %>
-        <div class="post-info">
-            <div class="post-meta">
-                <div class="date">
-                    <i class="fa-regular fa-calendar"></i>
-                    <%- date(page.date, "YYYY.MM.DD") %>
-                </div>
-                <div class="tags">
-                    <% if (page.tags.length > 0) { %>
-                        <i class="fa-solid fa-tag"></i>
-                        <% page.tags.map(tag => tag.name).forEach(function (tag) { %>
-                            <a class="tag" href="/tags/<%- tag %>/" title="<%- tag %>"><%- tag %> </a>
-                        <% }) %>
-                    <% } %>
-                </div>
-                <!-- TODO: visit counter -->
-            </div>
-        </div>
-
-        <%
-            let prev = page.prev ?? false;
-            let next = page.next ?? false;
-        if (!!prev || !!next) {
-        %>
-            <div class="pagination">
-                <% if (!!prev) { %>
-                    <a class="page-button clickable"
-                       href="<%= url_for(prev.path) %>"
-                       title="<%= prev.title %>">
-                        <span class="button-icon button-icon-prev"><i class="fa-solid fa-angles-left"></i></span>
-                        上一篇
-                    </a>
-                <% } else { %>
-                    <div></div>
-                <% } %>
-                <% if (!!next) { %>
-                    <a class="page-button clickable"
-                       href="<%= url_for(next.path) %>"
-                       title="<%= next.title %>">
-                        下一篇
-                        <span class="button-icon button-icon-next"><i class="fa-solid fa-angles-right"></i></span>
-                    </a>
-                <% } %>
+    <div class="post-container">
+        <% if (is_post() && (!page.hideInfo)) { %>
+            <div class="post-info">
+                <div class="post-title"><h3><a><%= page.title %></a></h3></div>
             </div>
         <% } %>
+
+        <div class="post-content">
+            <%- page.content %>
+        </div>
+
+        <% if (is_post() && (!page.hideInfo)) { %>
+            <div class="post-info">
+                <div class="post-meta">
+                    <div class="date">
+                        <i class="fa-regular fa-calendar"></i>
+                        <%- date(page.date, "YYYY.MM.DD") %>
+                    </div>
+                    <div class="tags">
+                        <% if (page.tags.length > 0) { %>
+                            <i class="fa-solid fa-tag"></i>
+                            <% page.tags.map(tag => tag.name).forEach(function (tag) { %>
+                                <a class="tag" href="/tags/<%- tag %>/" title="<%- tag %>"><%- tag %> </a>
+                            <% }) %>
+                        <% } %>
+                    </div>
+                    <!-- TODO: visit counter -->
+                </div>
+            </div>
+    </div>
+    <% } %>
+    <% if (is_post() && (!page.hideInfo)) {
+        let prev = page.prev ?? false;
+        let next = page.next ?? false;
+    if (!!prev || !!next) {
+    %>
+        <div class="pagination">
+            <% if (!!prev) { %>
+                <a class="page-button clickable"
+                   href="<%= url_for(prev.path) %>"
+                   title="<%= prev.title %>">
+                    <span class="button-icon button-icon-prev"><i class="fa-solid fa-angles-left"></i></span>
+                    上一篇
+                </a>
+            <% } else { %>
+                <div></div>
+            <% } %>
+            <% if (!!next) { %>
+                <a class="page-button clickable"
+                   href="<%= url_for(next.path) %>"
+                   title="<%= next.title %>">
+                    下一篇
+                    <span class="button-icon button-icon-next"><i class="fa-solid fa-angles-right"></i></span>
+                </a>
+            <% } %>
+        </div>
+    <% } %>
     <% } %>
     <%- partial('_partial/comment') %>
 </div>

@@ -56,3 +56,9 @@ prismjs:
   tab_replace: ""
 
 all_minifier: true
+
+encrypt:
+  abstract: '受到密码保护的内容w'
+  message: '这里有一些受到密码保护的内容, 请输入解密密码'
+  wrong_pass_message: '似乎你输入了错误的密码哦~'
+  wrong_hash_message: '错误: 数据校验失败, 内容可能已被损坏'

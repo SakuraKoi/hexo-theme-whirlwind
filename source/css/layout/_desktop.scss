@@ -11,6 +11,10 @@
   padding: 1em 2em 2em 2em;
 }
 
+.post-container {
+  position: relative;
+}
+
 @import "desktop/post";
 @import "desktop/post-index";
 @import "desktop/post-archive";

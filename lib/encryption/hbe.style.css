@@ -1,0 +1,55 @@
+.hbe-container {
+    padding: 1em 0;
+}
+
+.hbe-input-group {
+    display: flex;
+    margin-top: 0.5em;
+    max-width: 25em;
+}
+
+.hbe-button {
+    padding: 0.5em 1em;
+    border: 0;
+    background-color: var(--bg-color-darker-2);
+    color: var(--text-color-darker);
+    transition: background-color 0.5s;
+}
+
+.hbe-button:hover {
+    background-color: var(--border-color-darker-3);
+    color: var(--bg-color-contrast);
+}
+
+.hbe-input-field {
+    display: block;
+    padding: 0.2rem 0.5rem;
+    flex-grow: 1;
+    color: #343a40;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.hbe-input-field:focus {
+    border-color: var(--link-hover-color);
+    outline: 0;
+}
+
+.invalid-feedback {
+    color: var(--text-color-error);
+}
+
+.hbe-encrypt-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hbe-btn-icon {
+    margin-right: 0.2em;
+}
