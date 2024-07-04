@@ -1,18 +1,25 @@
-<article class="post">
-    <% if (is_post()) { %>
-        <div class="post-title"><%= page.title %></div>
-        <div class="post-meta">
-            <div class="date"><%- date(page.date, "YYYY MMMM Do") %></div>
-            <div class="tags">
-                <% page.tags.map(tag => tag.name).forEach(function (tag) { %>
-                    <div class="tag-item"><%- tag %></div>
-                <% }) %>
+<div class="post">
+    <% if (is_post() && (!page.hideInfo)) { %>
+        <div class="post-info">
+            <div class="post-title"><h3><a><%= page.title %></a></h3></div>
+            <div class="post-meta">
+                <div class="date">
+                    <i class="fa-regular fa-calendar"></i>
+                    <%- date(page.date, "YYYY.MM.DD") %>
+                </div>
+                <div class="tags">
+                    <% if (page.tags.length > 0) { %>
+                        <i class="fa-solid fa-tag"></i>
+                        <% page.tags.map(tag => tag.name).forEach(function (tag) { %>
+                            <a class="tag" href="/tags/<%- tag %>/" title="<%- tag %>"><%- tag %> </a>
+                        <% }) %>
+                    <% } %>
+                </div>
             </div>
         </div>
     <% } %>
 
-    <main class="post-content"><%- page.content %></main>
-
-</article>
-
-<%- js('js/highlight.js') %>
+    <div class="post-content">
+        <%- page.content %>
+    </div>
+</div>
