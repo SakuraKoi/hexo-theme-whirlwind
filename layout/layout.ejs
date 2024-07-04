@@ -33,14 +33,17 @@
     </title>
 
     <meta name="description"
-          content="<% page.description || theme.description || config.description || "A blog powered by Hexo" %>">
+          content="<%= page.desc || theme.description || config.description || "A blog powered by Hexo" %>">
+    <% if (!!page.author || !!theme.author || !!config.author) { %>
+        <meta name="author" content="<%= page.author || theme.author || config.author %>">
+    <% } %>
 
-    <% if (theme.favicon){ %>
+    <% if (!!theme.favicon){ %>
         <%- favicon_tag(theme.favicon) %>
     <% } %>
 
-    <% if (!!page.keywords || !!theme.keywords) { %>
-        <meta name="keywords" content="<% page.keywords || theme.keywords %>">
+    <% if (!!page.keywords || (!!page.tags && page.tags.length > 0) || !!theme.keywords) { %>
+        <meta name="keywords" content="<%= page.keywords || page.tags?.map(tag => tag.name).join(", ") || theme.keywords %>">
     <% } %>
 
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
