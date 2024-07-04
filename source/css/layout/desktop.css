@@ -26,8 +26,8 @@
 }
 
 .navigation > .navigation-menu a.current {
-    color: var(--bg-border-primary-color);
-    padding-bottom: 22px;
+    font-weight: bold;
+    padding-bottom: 19px;
     border-bottom: 1px solid var(--bg-border-primary-color);
 }
 

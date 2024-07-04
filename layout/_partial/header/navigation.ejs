@@ -1,12 +1,20 @@
 <div class="navigation">
     <div class="navigation-menu">
         <% for (name in theme.menu) { %>
-            <li><a href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].title %></a></li>
+            <li>
+                <% if (is_current(theme.menu[name].link)) { %>
+                    <a class="current" href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].title %></a>
+                <% } else { %>
+                    <a href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].title %></a>
+                <% } %>
+            </li>
         <% } %>
     </div>
     <div class="navigation-utility">
-        <div class="clickable">
-            <i class="fa-solid fa-arrow-left"></i>
-        </div>
+        <% if(is_post()) { %>
+            <div class="clickable">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+        <% } %>
     </div>
 </div>
