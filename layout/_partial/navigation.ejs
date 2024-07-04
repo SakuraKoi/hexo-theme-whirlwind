@@ -1,0 +1,10 @@
+<div class="navigation">
+    <div class="navigation-menu">
+        <% for (name in theme.menu) { %>
+            <li><a href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].title %></a></li>
+        <% } %>
+    </div>
+    <div class="navigation-utility">
+
+    </div>
+</div>

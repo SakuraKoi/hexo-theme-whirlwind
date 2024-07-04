@@ -8,9 +8,22 @@ description: "It's a minimal but stylish hexo theme!"
 copyright: '2024'
 moeICP: '萌ICP备114514号'
 
+menu:
+  - title: 首页
+    link: '/'
+  - title: 归档
+    link: '/archives'
+  - title: 留言
+    link: '/guestbook'
+  - title: 友链
+    link: '/links'
+  - title: 关于
+    link: '/about'
+
 contacts:
   - icon: github
     url: https://github.com/SakuraKoi
+
 
 gitalk:
   enable: false
