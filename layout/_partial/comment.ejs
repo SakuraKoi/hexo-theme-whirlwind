@@ -1,0 +1,22 @@
+<% if (theme.gitalk && theme.gitalk.enable && !page.disableComment) { %>
+    <div class="post-comment">
+        <a id="comments"></a>
+        <div id="gitalk-container" style="margin: 0 0 30px 0;"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1.8.0/dist/gitalk.min.js"
+            integrity="sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/md5@2.3.0/dist/md5.min.js"
+            integrity="sha256-se0xQkOOX44nCifjHRn5CNgLrhal4aKrdzH5gaCXB/4=" crossorigin="anonymous"></script>
+    <script>
+        const gitalk = new Gitalk({
+            clientID: '#{theme.gitalk.clientId}',
+            clientSecret: '#{theme.gitalk.clientSecret}',
+            repo: '#{theme.gitalk.repo}',      // The repository of store comments,
+            owner: '#{theme.gitalk.owner}',
+            admin: ['#{theme.gitalk.admin}'],
+            id: MD5(window.location.pathname),
+            distractionFreeMode: false
+        })
+        gitalk.render('gitalk-container')
+    </script>
+<% } %>

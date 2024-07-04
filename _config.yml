@@ -38,7 +38,7 @@ contacts:
 
 
 gitalk:
-  enable: false
+  enable: true
   clientId: '114514'
   clientSecret: '114514'
   repo: '114514'
