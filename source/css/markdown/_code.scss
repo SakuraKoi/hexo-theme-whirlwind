@@ -1,0 +1,141 @@
+pre {
+  background-color: #f0f0f0 !important;
+  position: relative;
+
+  code {
+    border: none;
+    background: inherit;
+  }
+}
+
+figure.highlight {
+  position: relative !important;
+  margin: 1em 0 !important;
+  border-radius: 2px !important;
+  line-height: 1.1em !important;
+  background-color: #f8f8f8 !important;
+  overflow-x: auto !important;
+
+  table, figure.highlight tr, figure.highlight td {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  table, figure.highlight tr, figure.highlight td {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .gutter {
+    display: none !important;
+  }
+
+  .code pre {
+    padding: 1.2em 1.4em !important;
+    line-height: 1.5em !important;
+    margin: 0 !important;
+  }
+}
+
+pre.language-html:before,
+pre.language-js:before,
+pre.language-bash:before,
+pre.language-css:before,
+pre.language-scss:before,
+pre.language-diff:before,
+pre.language-java:before,
+pre.language-xml:before,
+pre.language-python:before,
+pre.language-json:before,
+pre.language-swift:before,
+pre.language-ruby:before,
+pre.language-perl:before,
+pre.language-php:before,
+pre.language-c:before,
+pre.language-cpp:before {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  color: #ccc !important;
+  text-align: right !important;
+  font-size: 0.75em !important;
+  padding: 5px 10px 0 !important;
+  line-height: 15px !important;
+  height: 15px !important;
+}
+
+pre.language-html:before {
+  content: "HTML"
+}
+
+pre.language-js:before {
+  content: "JS"
+}
+
+pre.language-bash:before {
+  content: "BASH"
+}
+
+pre.language-css:before {
+  content: "CSS"
+}
+
+pre.language-scss:before {
+  content: "SCSS"
+}
+
+pre.language-diff:before {
+  content: "DIFF"
+}
+
+pre.language-java:before {
+  content: "JAVA"
+}
+
+pre.language-xml:before {
+  content: "XML"
+}
+
+pre.language-python:before {
+  content: "PYTHON"
+}
+
+pre.language-json:before {
+  content: "JSON"
+}
+
+pre.language-swift:before {
+  content: "SWIFT"
+}
+
+pre.language-ruby:before {
+  content: "RUBY"
+}
+
+pre.language-perl:before {
+  content: "PERL"
+}
+
+pre.language-php:before {
+  content: "PHP"
+}
+
+pre.language-c:before {
+  content: "C"
+}
+
+pre.language-java:before {
+  content: "JAVA"
+}
+
+pre.language-cpp:before {
+  content: "CPP"
+}
+
+pre.language-cpp:before {
+  content: 'C++'
+}

@@ -47,3 +47,10 @@ gitalk:
 
 node_sass:
   outputStyle: expanded
+
+syntax_highlighter: prismjs
+prismjs:
+  preprocess: true
+  line_number: true
+  line_threshold: 0
+  tab_replace: ""
