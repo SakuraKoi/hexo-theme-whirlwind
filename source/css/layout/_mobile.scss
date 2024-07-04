@@ -1,3 +1,29 @@
-@media screen and (max-width: 960px) {
+.sidebar {
+  width: 100%;
+  position: unset;
+  border-right: none;
+  z-index: 1;
+  height: unset;
+  padding-top: 3em;
+  padding-bottom: .5em;
+}
 
+.navigation {
+  width: 100%;
+  position: unset;
+}
+
+.main {
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+.footer {
+  position: unset;
+  width: 100%;
+}
+
+.post-content .link-container .card {
+  width: 100% !important;
+  margin-right: 0 !important;
 }
