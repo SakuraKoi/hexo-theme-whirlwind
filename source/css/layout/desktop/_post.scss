@@ -18,14 +18,15 @@
 
 .post-meta {
   max-width: 100%;
-  color: var(--text-color-lighter);
+  color: var(--text-color-lighter-2);
   font-size: 13px;
   display: flex;
   column-gap: 1em;
+  margin-top: 1.5em;
 
   .tags a {
     text-decoration: none;
-    color: var(--text-color-lighter);
+    color: var(--text-color-lighter-2);
     padding-right: .25em;
   }
 
@@ -37,4 +38,35 @@
 .post-info {
   padding-bottom: .25em;
   border-bottom: 1px solid var(--border-color-lighter);
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+
+  .page-button {
+    display: flex;
+    align-items: center;
+    padding: 0.25em;
+    line-height: 1.666em;
+    position: relative;
+    color: var(--text-color-lighter-1);
+    background: var(--bg-color-contrast);
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+
+    .button-icon {
+      font-size: 15px;
+    }
+
+    .button-icon-prev {
+      margin-right: 0.2em;
+    }
+
+    .button-icon-next {
+      margin-left: 0.2em;
+    }
+  }
 }
