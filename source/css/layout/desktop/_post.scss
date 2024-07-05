@@ -24,14 +24,16 @@
   column-gap: 1em;
   margin-top: 1.5em;
 
-  .tags a {
-    text-decoration: none;
-    color: var(--text-color-lighter-2);
-    padding-right: .25em;
-  }
+  .tags, .categories {
+    a {
+      text-decoration: none;
+      color: var(--text-color-lighter-2);
+      padding-right: .25em;
+    }
 
-  .tags a:hover {
-    color: var(--link-hover-color);
+    a:hover {
+      color: var(--link-hover-color);
+    }
   }
 }
 

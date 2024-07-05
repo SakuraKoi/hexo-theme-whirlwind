@@ -12,21 +12,7 @@
 
         <% if (is_post() && (!page.hideInfo)) { %>
             <div class="post-info">
-                <div class="post-meta">
-                    <div class="date">
-                        <i class="fa-regular fa-calendar"></i>
-                        <%- date(page.date, "YYYY.MM.DD") %>
-                    </div>
-                    <div class="tags">
-                        <% if (page.tags.length > 0) { %>
-                            <i class="fa-solid fa-tag"></i>
-                            <% page.tags.map(tag => tag.name).forEach(function (tag) { %>
-                                <a class="tag" href="/tags/<%- tag %>/" title="<%- tag %>"><%- tag %> </a>
-                            <% }) %>
-                        <% } %>
-                    </div>
-                    <!-- TODO: visit counter -->
-                </div>
+                <%- partial('_partial/post-meta', {post: page, hideVisit: true}) %>
             </div>
     </div>
     <% } %>

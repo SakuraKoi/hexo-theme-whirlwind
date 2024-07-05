@@ -1,0 +1,23 @@
+<div class="post-meta">
+    <div class="date">
+        <i class="fa-regular fa-calendar"></i>
+        <%- date(post.date, "YYYY.MM.DD") %>
+    </div>
+    <% if (post.tags.length > 0) { %>
+        <div class="tags">
+            <i class="fa-solid fa-tag"></i>
+            <% post.tags.map(tag => tag.name).forEach(function (tag) { %>
+                <a class="tag" href="/tags/<%- tag %>/" title="<%- tag %>"><%- tag %> </a>
+            <% }) %>
+        </div>
+    <% } %>
+    <% if (post.categories.length > 0) { %>
+        <div class="categories">
+            <i class="fa-solid fa-layer-group"></i>
+            <% post.categories.map(tag => tag.name).forEach(function (tag) { %>
+                <a class="tag" href="/categories/<%- tag %>/" title="<%- tag %>"><%- tag %> </a>
+            <% }) %>
+        </div>
+    <% } %>
+    <!-- TODO: visit counter -->
+</div>

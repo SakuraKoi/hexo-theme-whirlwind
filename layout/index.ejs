@@ -18,20 +18,8 @@
                     <% } %>
                 </p>
             </div>
-            <div class="post-meta">
-                <div class="date">
-                    <i class="fa-regular fa-calendar"></i>
-                    <%- date(post.date, "YYYY.MM.DD") %>
-                </div>
-                <div class="tags">
-                    <% if (post.tags.length > 0) { %>
-                        <i class="fa-solid fa-tag"></i>
-                        <% post.tags.map(tag => tag.name).forEach(function (tag) { %>
-                            <a class="tag" href="/tags/<%- tag %>/" title="<%- tag %>"><%- tag %> </a>
-                        <% }) %>
-                    <% } %>
-                </div>
-            </div>
+
+            <%- partial('_partial/post-meta', {post: post, hideVisit: false}) %>
         </div>
     <% }) %>
 </div>
