@@ -16,6 +16,7 @@ Layout inspired by [Anatole](https://github.com/Ben02/hexo-theme-Anatole)
 - [ ] Render post with markdown-it
 - [ ] (then) Implement post toc navigation
 - [ ] Fix gallery post
+- [ ] Fix code block caption
 
 ## Credit
 - Demo site's icon designed by Freepik
