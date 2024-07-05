@@ -41,7 +41,11 @@ p, ul, ol, dl {
 }
 
 ul, ol, dl {
-  padding-inline-start: 2em;
+  padding-inline-start: 0;
+}
+
+li {
+  margin-left: 2em;
 }
 
 ol ol,
@@ -89,4 +93,12 @@ a {
 
 a:hover {
   filter: brightness(75%);
+}
+
+li:has(input) {
+  margin-left: 0;
+}
+
+li:has(input)::marker {
+  content: "";
 }
