@@ -2,7 +2,8 @@
   "name": "hexo-theme-whirlwind",
   "version": "1.0.0",
   "description": "Hexo Theme Whirlwind",
-  "repository": "sakurakooi/hexo-theme-whirlwind",
+  "author": "SakuraKooi",
+  "repository": "https://github.com/SakuraKoi/hexo-theme-whirlwind",
   "keywords": [
     "hexo",
     "theme",
