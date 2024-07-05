@@ -37,6 +37,13 @@ blockquote {
   }
 }
 
+blockquote.pullquote.right {
+  text-align: right;
+  border-left: 0;
+  border-right: #4a4a4a .4em solid;
+  padding-right: 1em;
+}
+
 > blockquote {
   margin: 1.6em 0;
   padding: 0.3em 0;
