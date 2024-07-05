@@ -3,29 +3,42 @@ blockquote {
   box-sizing: border-box;
   margin: 0.3em -1px;
   border-left: #4a4a4a 0.4em solid;
+
+  p {
+    margin: 0 0 0 1em;
+  }
+
+  small {
+    display: inline-block;
+    margin: 0.8em 0 0.8em 1.5em;
+    font-size: 0.9em;
+    color: #ccc;
+  }
+
+  small:before {
+    content: "\2014 \00A0";
+  }
+
+  cite {
+    font-weight: bold;
+  }
+
+  cite a {
+    font-weight: normal;
+  }
+
+  footer {
+    margin: 0 0 0 1em;
+    font-size: 13px;
+
+    cite {
+      margin: 0 0 0 .25em;
+    }
+  }
 }
 
 > blockquote {
   margin: 1.6em 0;
   padding: 0.3em 0;
   background-color: var(--bg-color-darker-1);
-}
-
-blockquote p {
-  margin: 0 0 0 1em;
-}
-blockquote small {
-  display: inline-block;
-  margin: 0.8em 0 0.8em 1.5em;
-  font-size: 0.9em;
-  color: #ccc;
-}
-blockquote small:before {
-  content: "\2014 \00A0";
-}
-blockquote cite {
-  font-weight: bold;
-}
-blockquote cite a {
-  font-weight: normal;
 }
