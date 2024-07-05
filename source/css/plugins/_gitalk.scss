@@ -41,7 +41,36 @@
     filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.3));
   }
 
+  .gt-comment-content {
+    padding: 0;
+  }
+
+  .gt-comment-header {
+    border-bottom: 1px solid var(--border-color-darker-1);
+    padding: .75em 1em .25em 1em;
+    margin-bottom: 0;
+  }
+
+  .gt-comment-like {
+    top: .75em;
+    right: 2.75em;
+  }
+
+  .gt-comment-edit, .gt-comment-reply {
+    top: .75em;
+    right: 1.25em;
+  }
+
+  .gt-comment-body {
+    padding: .5em 1em .75em 1em;
+  }
+
   @import "../animations/gitalk";
 
-  @import "../markdown/document";
+  .markdown-body {
+    @import "../markdown/document";
+    > blockquote {
+      margin: unset;
+    }
+  }
 }

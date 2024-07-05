@@ -9,11 +9,11 @@
             integrity="sha256-se0xQkOOX44nCifjHRn5CNgLrhal4aKrdzH5gaCXB/4=" crossorigin="anonymous"></script>
     <script>
         const gitalk = new Gitalk({
-            clientID: '#{theme.gitalk.clientId}',
-            clientSecret: '#{theme.gitalk.clientSecret}',
-            repo: '#{theme.gitalk.repo}',      // The repository of store comments,
-            owner: '#{theme.gitalk.owner}',
-            admin: ['#{theme.gitalk.admin}'],
+            clientID: '<%= theme.gitalk.clientId %>',
+            clientSecret: '<%= theme.gitalk.clientSecret %>',
+            repo: '<%= theme.gitalk.repo %>',
+            owner: '<%= theme.gitalk.owner %>',
+            admin: ['<%= theme.gitalk.admin %>'],
             id: MD5(window.location.pathname),
             distractionFreeMode: false
         })
