@@ -9,7 +9,7 @@
         return collection;
     }, {})
 
-    Object.keys(posts).forEach(year => {
+    Object.keys(posts).reverse().forEach(year => {
     %>
         <div class="list-title"><%= year %></div>
         <% posts[year].forEach(post => { %>
