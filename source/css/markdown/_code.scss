@@ -56,7 +56,14 @@ pre.language-ruby:before,
 pre.language-perl:before,
 pre.language-php:before,
 pre.language-c:before,
-pre.language-cpp:before {
+pre.language-rust:before,
+pre.language-markup:before,
+pre.language-sql:before,
+pre.language-objectivec:before,
+pre.language-makefile:before,
+pre.language-go:before,
+pre.language-ini:before,
+pre.language-yaml:before {
   position: absolute !important;
   top: 0 !important;
   right: 0 !important;
@@ -138,4 +145,36 @@ pre.language-cpp:before {
 
 pre.language-cpp:before {
   content: 'C++'
+}
+
+pre.language-rust:before {
+  content: 'RUST'
+}
+
+pre.language-markup:before {
+  content: 'MARKUP'
+}
+
+pre.language-sql:before {
+  content: 'SQL'
+}
+
+pre.language-objectivec:before {
+  content: 'OBJECTIVE-C'
+}
+
+pre.language-makefile:before {
+  content: 'MAKEFILE'
+}
+
+pre.language-go:before {
+  content: 'GO'
+}
+
+pre.language-ini:before {
+  content: 'ini'
+}
+
+pre.language-yaml:before {
+  content: 'YAML'
 }
