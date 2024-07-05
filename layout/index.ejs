@@ -1,7 +1,7 @@
 <div class="post-list">
     <% page.posts.each(function (post) { %>
         <div class="post-item">
-            <h3 class="post-title"><a href="<%- url_for(post.path) %>"><%= post.title %></a></h3>
+            <h3 class="post-title"><a href="<%- url_for(post.path) %>"><%= post.title || "<未标题>" %></a></h3>
             <div class="post-summary">
                 <p>
                     <% if (post.summary) { %>
