@@ -5,11 +5,17 @@
             <div class="post-summary">
                 <p>
                     <% if (post.summary) { %>
-                    <%- post.summary %>
-                    <% } else { %>
-                        <%- strip_html(post.content).split('\n')[0].substring(0, 240); %>
+                        <%- post.summary %>
+                    <%
+                    } else {
+                        let summary = strip_html(post.content).split('\n')[0];
+                        let showMore = summary.length > 240;
+                    %>
+                    <%- summary.substring(0, 240); %>
+                    <% if (showMore) { %>
+                        <a class="read-more" href="<%- url_for(post.path) %>"> ...</a>
                     <% } %>
-                    <a class="read-more" href="<%- url_for(post.path) %>"> ...</a>
+                    <% } %>
                 </p>
             </div>
             <div class="post-meta">
