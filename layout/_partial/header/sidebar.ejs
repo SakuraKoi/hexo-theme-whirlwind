@@ -13,7 +13,9 @@
             <% } %>
         </ul>
     </div>
-    <% if (is_post()) { %>
-        <%- partial('bookmark') %>
-    <% } %>
+    <div class="toc-container">
+        <% if (is_post()) { %>
+            <%- partial('bookmark') %>
+        <% } %>
+    </div>
 </div>
