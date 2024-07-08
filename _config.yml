@@ -1,5 +1,5 @@
 title: Whirlwind-Theme
-keywords: SakuraKooi
+keywords: 'Whirlwind Theme'
 favicon: /images/default-favicon.ico
 logo: /images/default-logo.webp
 
@@ -14,15 +14,6 @@ menu:
   - text: 归档
     title: 归档
     link: '/archives'
-  - text: 留言
-    title: 留言板
-    link: '/guestbook'
-  - text: 友链
-    title: 友情链接
-    link: '/links'
-  - text: 关于
-    title: 关于
-    link: '/about'
 
 contacts:
   - icon: 'fa-brands fa-github'
