@@ -9,39 +9,6 @@ pre {
   }
 }
 
-figure.highlight {
-  position: relative !important;
-  margin: 1em 0 !important;
-  border-radius: 2px !important;
-  line-height: 1.1em !important;
-  background-color: #f8f8f8 !important;
-  overflow-x: auto !important;
-
-  table, figure.highlight tr, figure.highlight td {
-    width: 100% !important;
-    border-collapse: collapse !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  table, figure.highlight tr, figure.highlight td {
-    width: 100% !important;
-    border-collapse: collapse !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  .gutter {
-    display: none !important;
-  }
-
-  .code pre {
-    padding: 1.2em 1.4em !important;
-    line-height: 1.5em !important;
-    margin: 0 !important;
-  }
-}
-
 pre.language-html:before,
 pre.language-javascript:before,
 pre.language-bash:before,
@@ -65,6 +32,7 @@ pre.language-objectivec:before,
 pre.language-makefile:before,
 pre.language-go:before,
 pre.language-ini:before,
+pre.language-groovy:before,
 pre.language-yaml:before {
   position: absolute !important;
   top: 0 !important;
@@ -170,7 +138,11 @@ pre.language-go:before {
 }
 
 pre.language-ini:before {
-  content: 'ini'
+  content: 'INI'
+}
+
+pre.language-groovy:before {
+  content: 'GROOVY'
 }
 
 pre.language-yaml:before {
