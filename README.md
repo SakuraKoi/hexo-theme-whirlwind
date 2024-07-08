@@ -19,6 +19,7 @@ Layout inspired by [Anatole](https://github.com/Ben02/hexo-theme-Anatole)
 - [ ] (then) Implement post toc navigation
 - [ ] Fix gallery post
 - [ ] Fix code block caption
+- [ ] Fix code block language hint position in mobile screen
 
 ## Credit
 - Demo site's icon designed by Freepik
