@@ -56,6 +56,7 @@ pre.language-ruby:before,
 pre.language-perl:before,
 pre.language-php:before,
 pre.language-c:before,
+pre.language-cpp:before,
 pre.language-rust:before,
 pre.language-markup:before,
 pre.language-sql:before,
@@ -135,16 +136,12 @@ pre.language-c:before {
   content: "C"
 }
 
+pre.language-cpp:before {
+  content: "C++"
+}
+
 pre.language-java:before {
   content: "JAVA"
-}
-
-pre.language-cpp:before {
-  content: "CPP"
-}
-
-pre.language-cpp:before {
-  content: 'C++'
 }
 
 pre.language-rust:before {
