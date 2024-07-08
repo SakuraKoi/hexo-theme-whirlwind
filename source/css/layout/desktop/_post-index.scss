@@ -1,8 +1,17 @@
 .post-list > .post-item {
-  padding: 1em 0;
+  padding: 1.5em 0 1em 0;
+  border-bottom: 1px solid var(--border-color-lighter);
 
   .post-summary {
     word-wrap: break-word;
     word-break: break-all;
+
+    p {
+      margin: .6em 0 .25em 0;
+    }
+  }
+
+  .post-meta {
+    margin-top: 0;
   }
 }
