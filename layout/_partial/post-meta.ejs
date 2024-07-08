@@ -1,11 +1,11 @@
 <div class="post-meta">
-    <% if (is_post() && !post.hideDate) { %>
+    <% if (!hideMeta && !post.hideDate) { %>
     <div class="date">
         <i class="fa-regular fa-calendar"></i>
         <%- date(post.date, "YYYY.MM.DD") %>
     </div>
     <% } %>
-    <% if (is_post() && post.tags.length > 0) { %>
+    <% if (!hideMeta && post.tags.length > 0) { %>
         <div class="tags">
             <i class="fa-solid fa-tag"></i>
             <% post.tags.map(tag => tag.name).forEach(function (tag) { %>
@@ -13,7 +13,7 @@
             <% }) %>
         </div>
     <% } %>
-    <% if (is_post() && post.categories.length > 0) { %>
+    <% if (!hideMeta && post.categories.length > 0) { %>
         <div class="categories">
             <i class="fa-solid fa-layer-group"></i>
             <% post.categories.map(tag => tag.name).forEach(function (tag) { %>
