@@ -55,8 +55,6 @@ prismjs:
   line_threshold: 0
   tab_replace: ""
 
-all_minifier: true
-
 encrypt:
   abstract: '受到密码保护的内容w'
   message: '这里有一些受到密码保护的内容, 请输入解密密码'
