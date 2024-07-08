@@ -1,8 +1,10 @@
 <div class="post-meta">
+    <% if (!post.hideDate) { %>
     <div class="date">
         <i class="fa-regular fa-calendar"></i>
         <%- date(post.date, "YYYY.MM.DD") %>
     </div>
+    <% } %>
     <% if (post.tags.length > 0) { %>
         <div class="tags">
             <i class="fa-solid fa-tag"></i>
