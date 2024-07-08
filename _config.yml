@@ -36,6 +36,10 @@ gitalk:
   owner: '114514'
   admin: '114514'
 
+visitCounter:
+  endpoint: 'https://blog-counter.sakurakooi.workers.dev'
+  accessToken: 'awa'
+
 node_sass:
   outputStyle: expanded
 

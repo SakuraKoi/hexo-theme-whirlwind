@@ -1,25 +1,30 @@
 <div class="post-meta">
-    <% if (!hideMeta && !post.hideDate) { %>
-    <div class="date">
-        <i class="fa-regular fa-calendar"></i>
-        <%- date(post.date, "YYYY.MM.DD") %>
-    </div>
+    <% if (!isNotPost && !post.hideDate) { %>
+        <div class="meta-entry">
+            <i class="fa-regular fa-calendar"></i>
+            <%- date(post.date, "YYYY.MM.DD") %>
+        </div>
     <% } %>
-    <% if (!hideMeta && post.tags.length > 0) { %>
-        <div class="tags">
+    <% if (!isNotPost && post.tags.length > 0) { %>
+        <div class="meta-entry">
             <i class="fa-solid fa-tag"></i>
             <% post.tags.map(tag => tag.name).forEach(function (tag) { %>
                 <a class="tag" href="/tags/<%- tag %>/" title="<%- tag %>"><%- tag %> </a>
             <% }) %>
         </div>
     <% } %>
-    <% if (!hideMeta && post.categories.length > 0) { %>
-        <div class="categories">
+    <% if (!isNotPost && post.categories.length > 0) { %>
+        <div class="meta-entry">
             <i class="fa-solid fa-layer-group"></i>
             <% post.categories.map(tag => tag.name).forEach(function (tag) { %>
                 <a class="tag" href="/categories/<%- tag %>/" title="<%- tag %>"><%- tag %> </a>
             <% }) %>
         </div>
     <% } %>
-    <!-- TODO: visit counter -->
+    <% if (is_page() || is_post()) { %>
+        <div class="meta-entry">
+            <%- partial('visit-counter') %>
+        </div>
+        <!-- TODO: visit counter -->
+    <% } %>
 </div>

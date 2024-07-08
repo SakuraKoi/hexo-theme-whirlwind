@@ -1,0 +1,8 @@
+<i class="fa-solid fa-fire"></i>
+<span id="visit-counter">Loading...</span>
+<script src="https://cdn.jsdelivr.net/npm/md5@2.3.0/dist/md5.min.js"
+        integrity="sha256-se0xQkOOX44nCifjHRn5CNgLrhal4aKrdzH5gaCXB/4=" crossorigin="anonymous"></script>
+<%- js('js/plugins/visit-counter.js') %>
+<script>
+    loadVisitCounter('<%= theme.visitCounter.endpoint %>', '<%= theme.visitCounter.accessToken %>');
+</script>
