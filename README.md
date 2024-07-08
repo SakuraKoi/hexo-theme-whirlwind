@@ -10,7 +10,8 @@ Layout inspired by [Anatole](https://github.com/Ben02/hexo-theme-Anatole)
 - Telegram-like masked text
 - Built-in spoiler component
 - Gitalk comment
-
+- Hide title with `hideTitle: true`
+- Hide post meta with `hideMeta: true`
 ## TODO
 
 - [ ] Render post with markdown-it

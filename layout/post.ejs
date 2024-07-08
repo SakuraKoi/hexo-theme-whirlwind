@@ -1,6 +1,6 @@
 <div class="post">
     <div class="post-container">
-        <% if (is_post() && (!page.hideInfo)) { %>
+        <% if (is_post() && (!page.hideTitle)) { %>
             <div class="post-info">
                 <div class="post-title"><h3><a><%= page.title %></a></h3></div>
             </div>
@@ -10,12 +10,12 @@
             <%- page.content %>
         </div>
 
-        <% if (is_post() && (!page.hideInfo)) { %>
+        <% if (is_post() && (!page.hideMeta)) { %>
             <div class="post-info">
                 <%- partial('_partial/post-meta', {post: page, hideVisit: true}) %>
             </div>
+        <% } %>
     </div>
-    <% } %>
     <% if (is_post() && (!page.hideInfo)) {
         let prev = page.prev ?? false;
         let next = page.next ?? false;
