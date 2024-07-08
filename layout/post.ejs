@@ -16,7 +16,7 @@
             </div>
         <% } %>
     </div>
-    <% if (is_post() && (!page.hideInfo)) {
+    <% if (is_post() && (!page.hideMeta)) {
         let prev = page.prev ?? false;
         let next = page.next ?? false;
     if (!!prev || !!next) {
