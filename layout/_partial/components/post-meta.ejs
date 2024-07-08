@@ -21,7 +21,7 @@
             <% }) %>
         </div>
     <% } %>
-    <% if (is_page() || is_post()) { %>
+    <% if ((is_page() || is_post()) && theme.visitCounter.enable) { %>
         <div class="meta-entry">
             <%- partial('visit-counter') %>
         </div>

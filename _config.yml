@@ -37,7 +37,8 @@ gitalk:
   admin: '114514'
 
 visitCounter:
-  endpoint: 'https://blog-counter.sakurakooi.workers.dev'
+  enable: false
+  endpoint: 'https://github.com/SakuraKoi/hexo-backend-whirlwind-pv'
   accessToken: 'awa'
 
 node_sass:
