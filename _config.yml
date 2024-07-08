@@ -1,7 +1,7 @@
 title: Whirlwind-Theme
 keywords: SakuraKooi
-favicon: /images/favicon.ico
-logo: /images/logo.webp
+favicon: /images/default-favicon.ico
+logo: /images/default-logo.webp
 
 author: SakuraKooi
 description: "It's a minimal but stylish hexo theme!"
