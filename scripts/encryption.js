@@ -40,12 +40,12 @@ hexo.extend.filter.register('after_post_render', (data) => {
         return data;
     }
 
-    if (hexo.config.encrypt === undefined) {
-        hexo.config.encrypt = [];
+    if (hexo.config.theme_config.encrypt === undefined) {
+        hexo.config.theme_config.encrypt = [];
     }
 
-    if(('encrypt' in hexo.config) && ('tags' in hexo.config.encrypt)){
-        hexo.config.encrypt.tags.forEach((tagObj) => {
+    if(('encrypt' in hexo.config) && ('tags' in hexo.config.theme_config.encrypt)){
+        hexo.config.theme_config.encrypt.tags.forEach((tagObj) => {
             tagEncryptPairs[tagObj.name] = tagObj.password;
         });
     }
@@ -69,7 +69,7 @@ hexo.extend.filter.register('after_post_render', (data) => {
     data.origin = data.content;
 
     // Let's rock n roll
-    const config = Object.assign(defaultConfig, hexo.config.encrypt, data);
+    const config = Object.assign(defaultConfig, hexo.config.theme_config.encrypt, data);
     silent = config.silent;
     theme = config.theme.trim().toLowerCase();
 
@@ -140,36 +140,4 @@ function dlog(level, x) {
 
             log.info(x);
     }
-}
-
-// Utils functions
-function textToArray(s) {
-    var i = s.length;
-    var n = 0;
-    var ba = new Array()
-
-    for (var j = 0; j < i;) {
-        var c = s.codePointAt(j);
-        if (c < 128) {
-            ba[n++] = c;
-            j++;
-        } else if ((c > 127) && (c < 2048)) {
-            ba[n++] = (c >> 6) | 192;
-            ba[n++] = (c & 63) | 128;
-            j++;
-        } else if ((c > 2047) && (c < 65536)) {
-            ba[n++] = (c >> 12) | 224;
-            ba[n++] = ((c >> 6) & 63) | 128;
-            ba[n++] = (c & 63) | 128;
-            j++;
-        } else {
-            ba[n++] = (c >> 18) | 240;
-            ba[n++] = ((c >> 12) & 63) | 128;
-            ba[n++] = ((c >> 6) & 63) | 128;
-            ba[n++] = (c & 63) | 128;
-            j += 2;
-        }
-    }
-
-    return new Uint8Array(ba);
 }
