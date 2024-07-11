@@ -12,7 +12,7 @@
 
         <% if ((is_page() || is_post()) && (!page.hideMeta)) { %>
             <div class="post-info">
-                <%- partial('_partial/components/post-meta', {post: page, isNotPost: !is_post(), hideVisit: true}) %>
+                <%- partial('_partial/components/post-meta', {post: page, isNotPost: !is_post()}) %>
             </div>
         <% } %>
     </div>
