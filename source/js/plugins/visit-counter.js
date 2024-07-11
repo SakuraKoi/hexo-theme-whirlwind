@@ -1,14 +1,14 @@
-function loadVisitCounter(endpoint, token) {
-    const key = MD5(window.location.pathname);
+function loadVisitCounter(key, endpoint, token, isPost) {
     fetch(`${endpoint}/${key}`, {
         headers: {
-            "Sakura-Access-Token": token
+            "Sakura-Access-Token": token,
+            "Counter-Action": isPost ? "hit" : "get"
         }
     }).then(result => {
         return result.json();
     }).then(data => {
-       $("#visit-counter").text(data.counter);
+       $("#visit-counter-"+key).text(data.counter);
     }).catch(e => {
-        $("#visit-counter").text('--');
+        $("#visit-counter-"+key).text('--');
     });
 }
