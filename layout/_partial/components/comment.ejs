@@ -14,7 +14,7 @@
             repo: '<%= theme.gitalk.repo %>',
             owner: '<%= theme.gitalk.owner %>',
             admin: ['<%= theme.gitalk.admin %>'],
-            id: MD5(window.location.pathname),
+            id: '<%= page.uuid %>' || MD5(window.location.pathname),
             distractionFreeMode: false
         })
         gitalk.render('gitalk-container')
