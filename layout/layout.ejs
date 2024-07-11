@@ -11,26 +11,29 @@
 
     <link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
 
-    <title>
-        <% if (page.title) { %>
-            <%= page.title %> ·
-        <%
-        } else {
-            for (name in theme.menu) {
-                if (is_current(theme.menu[name].link)) {
-                    if (!!theme.menu[name].title) {
-        %>
-                        <%= theme.menu[name].title %> ·
-        <%
+    <title><%=
+        (() => {
+            let title = "";
+            if (!!page.title) {
+                title += page.title;
+            } else {
+                for (let name in theme.menu) {
+                    if (is_current(theme.menu[name].link) && !!theme.menu[name].title) {
+                        title += theme.menu[name].title;
+                        break;
                     }
-                    break;
                 }
             }
-        }
-        %>
 
-        <%= theme.title || config.title %>
-    </title>
+            if (!!title) {
+                title += " · ";
+            }
+
+            title += theme.title || config.title;
+
+            return title;
+        })()
+        %></title>
 
     <meta name="description"
           content="<%= page.description || theme.description || config.description || "A blog powered by Hexo" %>">
