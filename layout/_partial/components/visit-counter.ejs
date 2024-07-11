@@ -7,5 +7,5 @@ let key = post.uuid;
         integrity="sha256-se0xQkOOX44nCifjHRn5CNgLrhal4aKrdzH5gaCXB/4=" crossorigin="anonymous"></script>
 <%- js('js/plugins/visit-counter.js') %>
 <script>
-    loadVisitCounter('<%= key %>', '<%= theme.visitCounter.endpoint %>', '<%= theme.visitCounter.accessToken %>', '<%= !isNotPost %>');
+    loadVisitCounter('<%= key %>', '<%= theme.visitCounter.endpoint %>', '<%= theme.visitCounter.accessToken %>', <%= (is_page() || is_post()) %>);
 </script>
