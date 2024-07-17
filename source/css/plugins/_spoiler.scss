@@ -31,14 +31,20 @@
     rotate: 0;
   }
 
-  .spoiler-content {
+  .spoiler-container {
     overflow: hidden;
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
-    transition: max-height .5s ease-in-out;
-    max-height: 0;
+
+    display: grid;
+    transition: grid-template-rows .5s ease-in-out;
+    grid-template-rows: 0fr;
+
+    .spoiler-content {
+      min-height: 0;
+    }
   }
 }
 
@@ -47,7 +53,7 @@
     rotate: 180deg
   }
 
-  .spoiler-content {
-    max-height: 9999px;
+  .spoiler-container {
+    grid-template-rows: 1fr;
   }
 }

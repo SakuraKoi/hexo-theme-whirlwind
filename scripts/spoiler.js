@@ -8,13 +8,15 @@ hexo.extend.tag.register('spoiler', (args, content) =>
         </span>
         <i class="spoiler-icon fa-solid fa-angles-down"></i>
     </div>
-    <div class='spoiler-content'>
-        ${
-        hexo.render.renderSync({
-            text: content,
-            engine: "markdown"
-        }) || ""
-    }
+    <div class="spoiler-container">
+        <div class="spoiler-content">
+            ${
+            hexo.render.renderSync({
+                text: content,
+                engine: "markdown"
+            }) || ""
+        }
+        </div>
     </div>
 </div>`, {
     ends: true
