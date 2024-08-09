@@ -1,0 +1,63 @@
+.gt-container {
+  .gt-meta {
+    font-size: .8rem;
+  }
+  .gt-header-textarea {
+    font-size: .75rem;
+  }
+  .gt-comment {
+    .gt-comment-avatar {
+      position: absolute;
+      width: 2.8em;
+      height: 2.8em;
+
+      img {
+        border-radius: 0 !important;
+        filter: none;
+        border: 1px solid var(--border-color-darker-1);
+      }
+    }
+
+    .gt-comment-content {
+      margin-left: 0;
+
+      .gt-comment-header {
+        line-height: 1rem;
+        padding-left: 3.7em;
+
+        .gt-comment-username {
+          display: block;
+          width: 100%;
+          line-height: 0.8rem;
+        }
+
+        .gt-comment-text {
+          margin-left: 0;
+          font-size: .75em;
+        }
+
+        .gt-comment-date {
+          font-size: .75em;
+        }
+
+        .gt-comment-like {
+          top: 0.95em
+        }
+         .gt-comment-reply {
+           top: 0.95em
+         }
+      }
+
+      .gt-comment-body {
+        padding: 0.75em 1em 0.75em 1em;
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  .markdown-body {
+    @import "markdown";
+  }
+}
+
+

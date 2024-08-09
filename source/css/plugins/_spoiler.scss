@@ -1,13 +1,11 @@
 .spoiler {
   margin: 5px 0;
-  padding: 0 15px;
   border: 1px solid #E5E5E5;
   position: relative;
   clear: both;
 
   .spoiler-title {
     background: #E5E5E5;
-    margin: 0 -15px;
     padding: 5px 15px;
     color: #353535;
     font-weight: bold;
@@ -44,6 +42,7 @@
 
     .spoiler-content {
       min-height: 0;
+      padding: 0 15px;
     }
   }
 }
@@ -54,6 +53,7 @@
   }
 
   .spoiler-container {
+    overflow-x: scroll;
     grid-template-rows: 1fr;
   }
 }

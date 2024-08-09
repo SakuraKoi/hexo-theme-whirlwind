@@ -1,11 +1,19 @@
-
 blockquote {
   box-sizing: border-box;
   margin: 0.3em -1px;
   border-left: #4a4a4a 0.4em solid;
   background-color: var(--bg-color-darker-1-soild);
   color: var(--text-color-darker);
-  padding: 0.3em 0;
+  padding-right: 0.3em;
+  padding-left: 0;
+
+  :first-child {
+    padding-top: 0.3em;
+  }
+
+  :last-child:not(blockquote) {
+    padding-bottom: 0.3em;
+  }
 
   p {
     margin: 0 0 0 1em;
