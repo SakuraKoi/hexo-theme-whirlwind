@@ -77,7 +77,7 @@ pre, code {
   "PingFang SC", "Hiragino Sans GB", "Microsoft Jhenghei", "Microsoft YaHei", monospace !important;
 }
 
-p code {
+:not(pre) code {
   padding: 1px 3px;
   font-family: Inconsolata, monospace, sans-serif;
   font-size: .9em;
