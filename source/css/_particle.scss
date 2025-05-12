@@ -5,4 +5,9 @@
     width: 100vw;
     height: 100vh;
     z-index: -1;
+    filter: brightness(0.75);
+}
+
+body.night-mode #particles {
+    filter: brightness(1.25);
 }

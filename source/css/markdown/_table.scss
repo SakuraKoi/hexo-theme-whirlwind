@@ -12,7 +12,7 @@ table, table tr, table tr td, table tr th {
   border-color: var(--border-color-lighter);
 }
 table th {
-  color: var(--border-color-darker-2);
+  color: var(--text-color-darker);
   background-color: var(--bg-color-darker-2);
 }
 tr th {
@@ -32,5 +32,5 @@ table th {
   font-weight: bold;
 }
 table tbody > tr:nth-child(odd) > td, table tbody > tr:nth-child(odd) > th {
-  background-color: #f9f9f9;
+  background-color: var(--markdown-table-bg-color);
 }

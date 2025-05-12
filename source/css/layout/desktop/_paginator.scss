@@ -9,10 +9,12 @@
     padding: .15em .5em;
     text-align: center;
     background: var(--pagination-bg-color);
+    transition: color 0.3s, background-color 0.3s;
   }
 
   .page-number:hover, .extend:hover {
-    background: var(--pagination-hover-color);
+    background: var(--pagination-bg-hover-color);
+    color: var(--pagination-hover-color) !important;
   }
 
   .page-number.current {

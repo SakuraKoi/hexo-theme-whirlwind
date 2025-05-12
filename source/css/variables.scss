@@ -1,4 +1,7 @@
 body {
+    --page-fg-color: #00000099;
+    --page-bg-color: #fff;
+
     --text-color-darker: #464646;
     --text-color-normal: #5f5f5f;
     --text-color-lighter-1: #999999;
@@ -10,7 +13,7 @@ body {
     --bg-color-darker-1-solid: #f4f4f4;
     --bg-color-normal: #FFFFFFAA;
     --bg-color-lighter: #f6f6f6;
-    --bg-color-contrast: white;
+    --bg-color-contrast: var(--page-bg-color);
 
     --border-color-darker-3: #5a5a5a;
     --border-color-darker-2: #666666;
@@ -22,10 +25,65 @@ body {
     --link-hover-color: #4786d6;
 
     --navigation-bg-color: white;
+    --navigation-hover-color: var(--link-hover-color);
 
     --sidebar-author-color: #424242;
     --sidebar-desc-color: #565654;
+    --sidebar-hover-color: var(--link-hover-color);
+    --sidebar-logo-shadow-color: rgba(0, 0, 0, 0.3);
 
     --pagination-bg-color: #f5f5f5;
-    --pagination-hover-color: #F7FAFC;
+    --pagination-hover-color: #4786d6;
+    --pagination-bg-hover-color: #F7FAFC;
+
+    --markdown-pre-bg-color: #f0f0f0;
+    --markdown-pre-lang-color: #aaaaaa;
+    --markdown-table-bg-color: #f9f9f9;
+    --markdown-link-card-bg-color: #EEEEEE54;
+    --markdown-link-card-bg-color-hover: #EEEEEEAA;
+}
+
+body.night-mode {
+    --page-fg-color: #FFFFFFbb;
+    --page-bg-color: #212121;
+
+    --text-color-darker: #b9b9b9;
+    --text-color-normal: #a0a0a0;
+    --text-color-lighter-1: #888888;
+    --text-color-lighter-2: #707070;
+    --text-color-error: #ff4336;
+
+    --bg-color-darker-2: #6f6f6faa;
+    --bg-color-darker-1: #111111AA;
+    --bg-color-darker-1-solid: #1b1b1b;
+    --bg-color-normal: #212121AA;
+    --bg-color-lighter: #090909;
+
+    --border-color-darker-3: #a5a5a5;
+    --border-color-darker-2: #999999;
+    --border-color-darker-1: #5e5e5e;
+    --border-color-normal: #414141;
+    --border-color-lighter: #444444;
+
+    --link-color: #a5a5a5;
+    --link-markdown-color: #3b90ff;
+    --link-hover-color: #5ca3ff;
+
+    --navigation-bg-color: #212121;
+    --navigation-hover-color: white;
+
+    --sidebar-author-color: #bdbdbd;
+    --sidebar-desc-color: #a9a9ab;
+    --sidebar-hover-color: white;
+    --sidebar-logo-shadow-color: rgba(255, 255, 255, 0.3);
+
+    --pagination-bg-color: #0a0a0a;
+    --pagination-hover-color: #fff;
+    --pagination-bg-hover-color: #4786d6;
+
+    --markdown-pre-bg-color: #2f2f2f;
+    --markdown-pre-lang-color: #999;
+    --markdown-table-bg-color: #ffffff11;
+    --markdown-link-card-bg-color: #61616154;
+    --markdown-link-card-bg-color-hover: #616161AA;
 }

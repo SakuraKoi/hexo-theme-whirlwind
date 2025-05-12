@@ -11,7 +11,7 @@
     margin-bottom: .25em;
     margin-right: .5em;
     transition-duration: .15s;
-    background-color: rgba(238, 238, 238, .3333333333);
+    background-color: var(--markdown-link-card-bg-color);
     align-items: center;
     width: calc(50% - 2em);
 
@@ -37,6 +37,6 @@
 
   .card:hover {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12), 0 0 6px 0 rgba(0, 0, 0, .04);
-    background-color: rgba(238, 238, 238, .6666666667)
+    background-color: var(--markdown-link-card-bg-color-hover);
   }
 }

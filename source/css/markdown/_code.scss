@@ -1,9 +1,10 @@
 pre {
-  background-color: #f0f0f0 !important;
+  background: var(--markdown-pre-bg-color) !important;
   position: relative;
   font-size: 13px;
 
   code {
+    background: var(--markdown-pre-bg-color) !important;
     border: none;
     background: inherit;
   }
@@ -37,7 +38,7 @@ pre.language-yaml:before {
   position: absolute !important;
   top: 0 !important;
   right: 0 !important;
-  color: #ccc !important;
+  color: var(--markdown-pre-lang-color) !important;
   text-align: right !important;
   font-size: 12px !important;
   padding: 10px 10px 0 !important;

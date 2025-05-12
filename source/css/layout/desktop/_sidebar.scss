@@ -13,6 +13,8 @@
   z-index: 4;
   border-right: 1px solid var(--border-color-lighter);
   text-align: center;
+  backdrop-filter: blur(1.5px);
+  transition: backdrop-filter 0.5s;
 
   .author-info {
     display: flex;
@@ -31,8 +33,15 @@
       }
 
       a:hover {
-        color: var(--sidebar-author-color);
+        color: var(--sidebar-author-color) !important;
       }
+    }
+
+    .logo {
+      width: 127px;
+      margin-bottom: 1em;
+      filter: drop-shadow(0px 0px 7px var(--sidebar-logo-shadow-color));
+      border-radius: 50%;
     }
 
     .description {
@@ -52,6 +61,10 @@
         display: inline;
         padding: 0 6px;
         line-height: 0;
+
+        a:hover {
+          color: var(--sidebar-hover-color) !important;
+        }
       }
     }
   }
@@ -59,4 +72,8 @@
   .toc-container {
     height: 30%;
   }
+}
+
+.sidebar:hover {
+  backdrop-filter: blur(1px);
 }

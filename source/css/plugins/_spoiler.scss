@@ -1,13 +1,13 @@
 .spoiler {
   margin: 5px 0;
-  border: 1px solid #E5E5E5;
+  border: 1px solid var(--border-color-lighter);
   position: relative;
   clear: both;
 
   .spoiler-title {
-    background: #E5E5E5;
+    background: var(--bg-color-darker-2);
     padding: 5px 15px;
-    color: #353535;
+    color: var(--text-color-darker);
     font-weight: bold;
     font-size: 13px;
     display: flex;

@@ -85,18 +85,14 @@ pre, code {
   border: 1px solid var(--border-color-normal);
   background: var(--bg-color-darker-1);
   color: #d14;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 
 a {
   text-decoration: none;
   letter-spacing: 1px;
-  color: var(--link-hover-color)
-}
-
-a:hover {
-  filter: brightness(75%);
+  color: var(--link-markdown-color)
 }
 
 li:has(input) {

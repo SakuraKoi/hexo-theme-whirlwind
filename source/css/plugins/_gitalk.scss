@@ -66,6 +66,10 @@
     font-size: 14.5px;
   }
 
+  .gt-error {
+    color: var(--text-color-error);
+  }
+
   @import "../animations/gitalk";
 
   .markdown-body {

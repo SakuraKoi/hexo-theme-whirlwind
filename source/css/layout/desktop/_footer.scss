@@ -9,12 +9,8 @@
   padding-bottom: 20px;
   z-index: 5;
 
-  a, a:link {
-    color: var(--link-color);
-  }
-
   a:hover {
-    color: var(--link-hover-color);
+    color: var(--sidebar-hover-color) !important;
   }
 
   .moe-icp img {
