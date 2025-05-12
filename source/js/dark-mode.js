@@ -9,14 +9,14 @@
                 button.addClass('light-mode-night');
                 button.removeClass('light-mode-day');
                 button.removeClass('light-mode-auto');
-                button.attr('title', '日间模式');
+                button.attr('title', '切换至明亮风格');
                 break;
             }
             case 'day': {
                 button.removeClass('light-mode-night');
                 button.addClass('light-mode-day');
                 button.removeClass('light-mode-auto');
-                button.attr('title', '自动模式');
+                button.attr('title', '切换至自动风格');
                 break;
             }
             case 'auto':
@@ -24,7 +24,7 @@
                 button.removeClass('light-mode-night');
                 button.removeClass('light-mode-day');
                 button.addClass('light-mode-auto');
-                button.attr('title', '夜间模式');
+                button.attr('title', '切换至暗黑风格');
                 break;
             }
         }
