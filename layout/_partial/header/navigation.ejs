@@ -1,20 +1,27 @@
 <div class="navigation">
-    <div class="navigation-menu">
-        <% for (name in theme.menu) { %>
-            <li>
-                <% if (is_current(theme.menu[name].link)) { %>
-                    <a class="current" href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].text %></a>
-                <% } else { %>
-                    <a href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].text %></a>
-                <% } %>
-            </li>
-        <% } %>
-    </div>
-    <div class="navigation-utility">
-        <% if(is_post()) { %>
-            <div class="clickable nav-button" id="nav-back" title="返回">
-                <i class="fa-solid fa-arrow-left"></i>
+    <div class="navigation-container">
+        <div class="navigation-menu">
+            <% for (name in theme.menu) { %>
+                <li>
+                    <% if (is_current(theme.menu[name].link)) { %>
+                        <a class="current" href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].text %></a>
+                    <% } else { %>
+                        <a href="<%- url_for(theme.menu[name].link) %>"><%= theme.menu[name].text %></a>
+                    <% } %>
+                </li>
+            <% } %>
+        </div>
+        <div class="navigation-utility">
+            <% if(is_post()) { %>
+                <div class="clickable nav-button" id="nav-back" title="返回">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+            <% } %>
+            <div class="clickable nav-button" id="nav-light" title="夜间模式">
+                <i class="fa-solid fa-cloud-sun light-mode-auto"></i>
+                <i class="fa-solid fa-moon light-mode-night"></i>
+                <i class="fa-solid fa-sun light-mode-day"></i>
             </div>
-        <% } %>
+        </div>
     </div>
 </div>
