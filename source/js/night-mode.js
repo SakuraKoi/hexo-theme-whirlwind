@@ -35,6 +35,7 @@
         }
     }
     updateLightMode();
+    setTimeout(() => body.addClass('loaded'), 1);
 
     button.on('click', () => {
         // on / off / auto cycle

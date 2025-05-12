@@ -1,12 +1,16 @@
 body {
-    color: #00000099;
     font-family: "LXGW WenKai Screen", "PingHei", "PingFang SC", Helvetica Neue, "Work Sans", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
     font-size: 15px;
     width: 100%;
-    background-color: #fff;
     padding: 0;
     margin: 0;
     line-height: 1.6em;
+    color: var(--page-fg-color);
+    background-color: var(--page-bg-color);
+}
+
+body.loaded {
+    transition: color 0.5s, background-color 0.5s;
 }
 
 a {
@@ -16,7 +20,6 @@ a {
 a:link, a:visited, .clickable {
     opacity: 1;
     transition: all 0.15s linear;
-    color: #424242;
 }
 
 .clickable, a {
