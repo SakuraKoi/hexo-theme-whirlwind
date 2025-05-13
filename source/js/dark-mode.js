@@ -37,7 +37,14 @@
     updateLightMode();
     setTimeout(() => body.addClass('loaded'), 1);
 
-    button.on('click', () => {
+    button.on('mousedown', e => {
+        if (e.detail > 1) {
+            e.preventDefault();
+        }
+    });
+
+    button.on('click', e => {
+        e.preventDefault();
         // on / off / auto cycle
         if (localStorage.getItem('light-mode') === 'night') {
             localStorage.setItem('light-mode', 'day');
