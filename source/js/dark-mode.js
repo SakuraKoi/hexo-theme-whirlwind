@@ -37,12 +37,6 @@
     updateLightMode();
     setTimeout(() => body.addClass('loaded'), 1);
 
-    button.on('mousedown', e => {
-        if (e.detail > 1) {
-            e.preventDefault();
-        }
-    });
-
     button.on('click', e => {
         e.preventDefault();
         // on / off / auto cycle
