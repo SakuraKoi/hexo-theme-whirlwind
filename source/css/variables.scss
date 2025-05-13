@@ -41,6 +41,8 @@ body {
     --markdown-table-bg-color: #f9f9f9;
     --markdown-link-card-bg-color: #EEEEEE54;
     --markdown-link-card-bg-color-hover: #EEEEEEAA;
+
+    --gitalk-bg-hover-color: var(--bg-color-lighter);
 }
 
 body.night-mode {
@@ -57,7 +59,7 @@ body.night-mode {
     --bg-color-darker-1: #111111AA;
     --bg-color-darker-1-solid: #1b1b1b;
     --bg-color-normal: #212121AA;
-    --bg-color-lighter: #090909;
+    --bg-color-lighter: #333333AA;
 
     --border-color-darker-3: #a5a5a5;
     --border-color-darker-2: #999999;
@@ -86,4 +88,6 @@ body.night-mode {
     --markdown-table-bg-color: #ffffff11;
     --markdown-link-card-bg-color: #61616154;
     --markdown-link-card-bg-color-hover: #616161AA;
+
+    --gitalk-bg-hover-color: #333333;
 }

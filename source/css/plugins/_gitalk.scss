@@ -1,10 +1,33 @@
 .gt-container {
+  .gt-meta {
+    border-bottom: 1px solid var(--border-color-normal);
+  }
+
+  .gt-popup {
+    background: var(--page-bg-color);
+    border: 1px solid var(--border-color-normal);
+  }
+
+  .gt-copyright {
+    border-top: 1px solid var(--border-color-normal);
+  }
+
   .gt-link {
     border-bottom: 1px dotted var(--border-color-darker-3) !important;
   }
 
   .gt-header-controls-tip {
     color: var(--border-color-darker-3) !important;
+  }
+
+  .gt-header-textarea {
+    color: var(--text-color-darker);
+    background-color: var(--bg-color-lighter);
+    border: 1px solid var(--border-color-darker-1);
+  }
+
+  .gt-header-textarea:hover {
+    background-color: var(--border-color-normal);
   }
 
   .gt-btn-preview {
@@ -32,8 +55,16 @@
     background-color: var(--bg-color-contrast) !important;
   }
 
-  .gt-comment-admin .gt-comment-content {
-    background-color: var(--bg-color-lighter) !important;
+  .gt-comment-admin {
+    .gt-comment-content {
+      background-color: var(--bg-color-lighter) !important;
+    }
+
+    .gt-comment-content:hover {
+      -webkit-box-shadow: 0 .625em 3.75em 0 var(--bg-color-darker-1-solid);
+      box-shadow: 0 .625em 3.75em 0 var(--bg-color-darker-1-solid);
+      background-color: var(--gitalk-bg-hover-color) !important;
+    }
   }
 
   .gt-avatar img {
@@ -64,10 +95,11 @@
   .gt-comment-body {
     padding: 0.75em 1.25em 1em 1.25em;
     font-size: 14.5px;
+    color: var(--text-color-darker) !important;
   }
 
   .gt-error {
-    color: var(--text-color-error);
+    color: var(--text-color-error) !important;
   }
 
   @import "../animations/gitalk";
