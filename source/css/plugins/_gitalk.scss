@@ -61,8 +61,8 @@
     }
 
     .gt-comment-content:hover {
-      -webkit-box-shadow: 0 .625em 3.75em 0 var(--bg-color-darker-1-solid);
-      box-shadow: 0 .625em 3.75em 0 var(--bg-color-darker-1-solid);
+      -webkit-box-shadow: unset;
+      box-shadow: unset;
       background-color: var(--gitalk-bg-hover-color) !important;
     }
   }
@@ -72,8 +72,8 @@
   }
 
   .gt-comment-content:hover {
-    -webkit-box-shadow: 0 .625em 3.75em 0 var(--bg-color-darker-1-solid);
-    box-shadow: 0 .625em 3.75em 0 var(--bg-color-darker-1-solid);
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
     background-color: var(--gitalk-bg-hover-color) !important;
   }
 
