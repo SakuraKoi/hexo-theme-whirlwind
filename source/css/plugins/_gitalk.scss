@@ -67,6 +67,16 @@
     }
   }
 
+  .gt-comment-content {
+    background-color: var(--bg-color-lighter) !important;
+  }
+
+  .gt-comment-content:hover {
+    -webkit-box-shadow: 0 .625em 3.75em 0 var(--bg-color-darker-1-solid);
+    box-shadow: 0 .625em 3.75em 0 var(--bg-color-darker-1-solid);
+    background-color: var(--gitalk-bg-hover-color) !important;
+  }
+
   .gt-avatar img {
     border-radius: 50% !important;
     filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.3));
@@ -106,6 +116,7 @@
 
   .markdown-body {
     @import "../markdown/document";
+
     > blockquote {
       margin: unset;
     }
