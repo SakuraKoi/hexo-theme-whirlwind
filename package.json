@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "hexo-renderer-sass": "^0.5.0",
-    "hexo-uuid": "^1.0.4"
+    "hexo-uuid": "^1.0.4",
+    "node-html-parser": "^7.0.1"
   }
 }
