@@ -1,40 +1,26 @@
-pre {
+.code-wrapper {
   background: var(--markdown-pre-bg-color) !important;
+  position: relative;
+  margin: 0.5em 0;
+}
+
+.code-wrapper.has-language {
+  padding-top: 8px;
+  padding-bottom: 2px;
+}
+
+pre {
+  background-color: transparent !important;
   position: relative;
   font-size: 13px;
 
   code {
-    background: var(--markdown-pre-bg-color) !important;
+    background-color: transparent !important;
     border: none;
-    background: inherit;
   }
 }
 
-pre.language-html:before,
-pre.language-javascript:before,
-pre.language-bash:before,
-pre.language-css:before,
-pre.language-scss:before,
-pre.language-diff:before,
-pre.language-java:before,
-pre.language-xml:before,
-pre.language-python:before,
-pre.language-json:before,
-pre.language-swift:before,
-pre.language-ruby:before,
-pre.language-perl:before,
-pre.language-php:before,
-pre.language-c:before,
-pre.language-cpp:before,
-pre.language-rust:before,
-pre.language-markup:before,
-pre.language-sql:before,
-pre.language-objectivec:before,
-pre.language-makefile:before,
-pre.language-go:before,
-pre.language-ini:before,
-pre.language-groovy:before,
-pre.language-yaml:before {
+.code-wrapper.has-language:before {
   position: absolute !important;
   top: 0 !important;
   right: 0 !important;
@@ -46,106 +32,114 @@ pre.language-yaml:before {
   height: 15px !important;
 }
 
-pre.language-html:before {
+.code-wrapper.language-html:before {
   content: "HTML"
 }
 
-pre.language-javascript:before {
+.code-wrapper.language-javascript:before {
   content: "JS"
 }
 
-pre.language-bash:before {
+.code-wrapper.language-bash:before {
   content: "BASH"
 }
 
-pre.language-css:before {
+.code-wrapper.language-css:before {
   content: "CSS"
 }
 
-pre.language-scss:before {
+.code-wrapper.language-scss:before {
   content: "SCSS"
 }
 
-pre.language-diff:before {
+.code-wrapper.language-diff:before {
   content: "DIFF"
 }
 
-pre.language-java:before {
+.code-wrapper.language-java:before {
   content: "JAVA"
 }
 
-pre.language-xml:before {
+.code-wrapper.language-xml:before {
   content: "XML"
 }
 
-pre.language-python:before {
+.code-wrapper.language-python:before {
   content: "PYTHON"
 }
 
-pre.language-json:before {
+.code-wrapper.language-json:before {
   content: "JSON"
 }
 
-pre.language-swift:before {
+.code-wrapper.language-swift:before {
   content: "SWIFT"
 }
 
-pre.language-ruby:before {
+.code-wrapper.language-ruby:before {
   content: "RUBY"
 }
 
-pre.language-perl:before {
+.code-wrapper.language-perl:before {
   content: "PERL"
 }
 
-pre.language-php:before {
+.code-wrapper.language-php:before {
   content: "PHP"
 }
 
-pre.language-c:before {
+.code-wrapper.language-c:before {
   content: "C"
 }
 
-pre.language-cpp:before {
+.code-wrapper.language-cpp:before {
   content: "C++"
 }
 
-pre.language-java:before {
+.code-wrapper.language-java:before {
   content: "JAVA"
 }
 
-pre.language-rust:before {
+.code-wrapper.language-rust:before {
   content: 'RUST'
 }
 
-pre.language-markup:before {
+.code-wrapper.language-markup:before {
   content: 'MARKUP'
 }
 
-pre.language-sql:before {
+.code-wrapper.language-sql:before {
   content: 'SQL'
 }
 
-pre.language-objectivec:before {
+.code-wrapper.language-objectivec:before {
   content: 'OBJECTIVE-C'
 }
 
-pre.language-makefile:before {
+.code-wrapper.language-makefile:before {
   content: 'MAKEFILE'
 }
 
-pre.language-go:before {
+.code-wrapper.language-go:before {
   content: 'GO'
 }
 
-pre.language-ini:before {
+.code-wrapper.language-ini:before {
   content: 'INI'
 }
 
-pre.language-groovy:before {
+.code-wrapper.language-groovy:before {
   content: 'GROOVY'
 }
 
-pre.language-yaml:before {
+.code-wrapper.language-yaml:before {
   content: 'YAML'
+}
+
+.code-wrapper.language-toml:before {
+  content: 'TOML'
+}
+
+.code-wrapper.language-markdown:before {
+  content: 'MARKDOWN'
 }
