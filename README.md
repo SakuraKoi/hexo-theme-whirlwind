@@ -5,21 +5,44 @@ A minimal but stylish Hexo theme by SakuraKooi
 Layout inspired by [Anatole](https://github.com/Ben02/hexo-theme-Anatole)
 
 ## Features
-- Responsive
 - Post encryption
+  ```
+  password: <test>
+  ```
+- Hide title
+  ```
+  hideTitle: true
+  ```
+- Hide post meta
+  ```
+  hideMeta: true
+  ```
+- Hide post date
+  ```
+  hideDate: true
+  ```
 - Telegram-like masked text
+  ```
+  {% blur "It's a masked text" %}
+  ```
 - Built-in spoiler component
+  ```
+  {% spoiler Title %}
+  content
+  {% endspoiler %}
+  ```
+- Minimal but stylish link template
+  ```
+  {% linkContainer %}
+  {% linkCard "Username1" "desc1" "https://url.com" "/images/friends/akarin.webp" %}
+  {% endlinkContainer%}
+  ```
 - Gitalk comment
-- Hide title with `hideTitle: true`
-- Hide post meta with `hideMeta: true`
-- Hide post date with `hideDate: true`
 ## TODO
 
 - [ ] Render post with markdown-it
 - [ ] (then) Implement post toc navigation
 - [ ] Fix gallery post
-- [ ] Fix code block caption
-- [ ] Fix code block language hint position in mobile screen
 
 ## Credit
 - Demo site's icon designed by Freepik
