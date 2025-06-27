@@ -23,6 +23,12 @@
       filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.3));
       border-radius: 50%
     }
+
+    .card-header {
+      .name {
+        font-weight: bold;
+      }
+    }
   }
 
   .card:nth-child(even) {
